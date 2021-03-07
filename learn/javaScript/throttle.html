@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>节流 | Zhan&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <meta name="description" content="Learn and Share">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.576656d1.css" as="style"><link rel="preload" href="/blog/assets/js/app.ba4f2a27.js" as="script"><link rel="preload" href="/blog/assets/js/3.6dda7def.js" as="script"><link rel="preload" href="/blog/assets/js/26.05196855.js" as="script"><link rel="preload" href="/blog/assets/js/4.6608dc79.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.574efe93.js"><link rel="prefetch" href="/blog/assets/js/10.c395d866.js"><link rel="prefetch" href="/blog/assets/js/11.f9a7f16d.js"><link rel="prefetch" href="/blog/assets/js/12.b4e8e3ac.js"><link rel="prefetch" href="/blog/assets/js/13.53fdfae4.js"><link rel="prefetch" href="/blog/assets/js/14.372c4172.js"><link rel="prefetch" href="/blog/assets/js/15.870aa9a3.js"><link rel="prefetch" href="/blog/assets/js/16.76c7db42.js"><link rel="prefetch" href="/blog/assets/js/17.5cc4270f.js"><link rel="prefetch" href="/blog/assets/js/18.8343cab8.js"><link rel="prefetch" href="/blog/assets/js/19.c0aac732.js"><link rel="prefetch" href="/blog/assets/js/20.ded36a83.js"><link rel="prefetch" href="/blog/assets/js/21.74cb3c5c.js"><link rel="prefetch" href="/blog/assets/js/22.aec2d91d.js"><link rel="prefetch" href="/blog/assets/js/23.0d442f20.js"><link rel="prefetch" href="/blog/assets/js/24.3d3b4a6f.js"><link rel="prefetch" href="/blog/assets/js/25.a30e7bfd.js"><link rel="prefetch" href="/blog/assets/js/27.05343ee1.js"><link rel="prefetch" href="/blog/assets/js/28.710f9be7.js"><link rel="prefetch" href="/blog/assets/js/29.c6f12f81.js"><link rel="prefetch" href="/blog/assets/js/30.a2f1da44.js"><link rel="prefetch" href="/blog/assets/js/31.41d2e339.js"><link rel="prefetch" href="/blog/assets/js/32.4c5011bb.js"><link rel="prefetch" href="/blog/assets/js/33.18288830.js"><link rel="prefetch" href="/blog/assets/js/34.55ca9674.js"><link rel="prefetch" href="/blog/assets/js/35.61ac5b7b.js"><link rel="prefetch" href="/blog/assets/js/36.a4254066.js"><link rel="prefetch" href="/blog/assets/js/37.886a0437.js"><link rel="prefetch" href="/blog/assets/js/38.72b9f5d5.js"><link rel="prefetch" href="/blog/assets/js/39.36f79457.js"><link rel="prefetch" href="/blog/assets/js/40.daadf572.js"><link rel="prefetch" href="/blog/assets/js/41.952e81bf.js"><link rel="prefetch" href="/blog/assets/js/42.afc0cd49.js"><link rel="prefetch" href="/blog/assets/js/43.117cfa96.js"><link rel="prefetch" href="/blog/assets/js/44.fece6469.js"><link rel="prefetch" href="/blog/assets/js/5.779aa980.js"><link rel="prefetch" href="/blog/assets/js/6.e12d0cc8.js"><link rel="prefetch" href="/blog/assets/js/7.e7473254.js"><link rel="prefetch" href="/blog/assets/js/8.dee86cdf.js"><link rel="prefetch" href="/blog/assets/js/9.e9902c82.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.576656d1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Zhan's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><span class="title">收藏</span> <span class="arrow down"></span></button> <button type="button" aria-label="收藏" class="mobile-dropdown-title"><span class="title">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/collect/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/javaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/css.html" class="nav-link">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习总结" class="dropdown-title"><span class="title">学习总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习总结" class="mobile-dropdown-title"><span class="title">学习总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          git
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/git/base.html" class="nav-link">
+  常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          TypeScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/typescript/base.html" class="nav-link">
+  类型基础
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/typescript/interface.html" class="nav-link">
+  接口
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/typescript/senior.html" class="nav-link">
+  类型深入
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/javaScript/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/try catch.html" class="nav-link">
+  try catch
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/debounce.html" class="nav-link">
+  防抖
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/throttle.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  节流
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/vue/base.html" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/vue3.0.html" class="nav-link">
+  Vue3.0
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/optimize.html" class="nav-link">
+  优化
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/vuex.html" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/observable.html" class="nav-link">
+  observable
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/router.html" class="nav-link">
+  router
+</a></li></ul></li><li class="dropdown-item"><h4>
+          ES6+
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/es6/base.html" class="nav-link">
+  常用
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/array.html" class="nav-link">
+  Array
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/object.html" class="nav-link">
+  Object
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/set.html" class="nav-link">
+  Set
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Promise
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/promise/base.html" class="nav-link">
+  使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/css/px.html" class="nav-link">
+  PX
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/css/stylus.html" class="nav-link">
+  Stylus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Browser
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/browser/storage.html" class="nav-link">
+  storage
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/browser/analysis.html" class="nav-link">
+  analysis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="辅助工具" class="dropdown-title"><span class="title">辅助工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="辅助工具" class="mobile-dropdown-title"><span class="title">辅助工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/Nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vuepress.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人" class="dropdown-title"><span class="title">个人</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人" class="mobile-dropdown-title"><span class="title">个人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/personal/website.html" class="nav-link">
+  响应网站
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/plugins.html" class="nav-link">
+  业务组件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/element.html" class="nav-link">
+  Element
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/vant.html" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><span class="title">收藏</span> <span class="arrow down"></span></button> <button type="button" aria-label="收藏" class="mobile-dropdown-title"><span class="title">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/collect/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/javaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/collect/css.html" class="nav-link">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习总结" class="dropdown-title"><span class="title">学习总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习总结" class="mobile-dropdown-title"><span class="title">学习总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          git
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/git/base.html" class="nav-link">
+  常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          TypeScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/typescript/base.html" class="nav-link">
+  类型基础
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/typescript/interface.html" class="nav-link">
+  接口
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/typescript/senior.html" class="nav-link">
+  类型深入
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/javaScript/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/try catch.html" class="nav-link">
+  try catch
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/debounce.html" class="nav-link">
+  防抖
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/javaScript/throttle.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  节流
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/vue/base.html" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/vue3.0.html" class="nav-link">
+  Vue3.0
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/optimize.html" class="nav-link">
+  优化
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/vuex.html" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/observable.html" class="nav-link">
+  observable
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/vue/router.html" class="nav-link">
+  router
+</a></li></ul></li><li class="dropdown-item"><h4>
+          ES6+
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/es6/base.html" class="nav-link">
+  常用
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/array.html" class="nav-link">
+  Array
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/object.html" class="nav-link">
+  Object
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/es6/set.html" class="nav-link">
+  Set
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Promise
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/promise/base.html" class="nav-link">
+  使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/css/px.html" class="nav-link">
+  PX
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/css/stylus.html" class="nav-link">
+  Stylus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Browser
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/learn/browser/storage.html" class="nav-link">
+  storage
+</a></li><li class="dropdown-subitem"><a href="/blog/learn/browser/analysis.html" class="nav-link">
+  analysis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="辅助工具" class="dropdown-title"><span class="title">辅助工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="辅助工具" class="mobile-dropdown-title"><span class="title">辅助工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/Nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vuepress.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人" class="dropdown-title"><span class="title">个人</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人" class="mobile-dropdown-title"><span class="title">个人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/personal/website.html" class="nav-link">
+  响应网站
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/plugins.html" class="nav-link">
+  业务组件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/element.html" class="nav-link">
+  Element
+</a></li><li class="dropdown-item"><!----> <a href="/blog/personal/vant.html" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>节流</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/learn/javaScript/throttle.html#节流" class="sidebar-link">节流</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="节流"><a href="#节流" class="header-anchor">#</a> 节流</h2> <div class="custom-block tip"><p class="custom-block-title">节流</p> <p>所谓节流，就是指连续触发事件但是在 n 秒中只执行一次函数</p></div> <h4 id="时间戳版"><a href="#时间戳版" class="header-anchor">#</a> 时间戳版</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> wait</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> previous <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> now <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>now <span class="token operator">-</span> previous <span class="token operator">&gt;</span> wait<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            previous <span class="token operator">=</span> now<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="定时器版"><a href="#定时器版" class="header-anchor">#</a> 定时器版</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> wait</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> timeout<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>timeout<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                timeout <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+                <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> wait<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="二者结合版"><a href="#二者结合版" class="header-anchor">#</a> 二者结合版</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @desc 函数节流
+ * @param fn 函数
+ * @param wait 延迟执行毫秒数
+ * @param type 1 表时间戳版，2 表定时器版
+ */</span>
+<span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> wait <span class="token punctuation">,</span>type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>type<span class="token operator">===</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> previous <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>type<span class="token operator">===</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> timeout<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>type<span class="token operator">===</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> now <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>now <span class="token operator">-</span> previous <span class="token operator">&gt;</span> wait<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                previous <span class="token operator">=</span> now<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>type<span class="token operator">===</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>timeout<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    timeout <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+                    <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> wait<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <div class="gitalk-container"><div id="gitalk-container"></div></div> <div class="gitalk-container"><div id="gitalk-container"></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/7/2021, 3:04:13 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/blog/assets/js/app.ba4f2a27.js" defer></script><script src="/blog/assets/js/3.6dda7def.js" defer></script><script src="/blog/assets/js/26.05196855.js" defer></script><script src="/blog/assets/js/4.6608dc79.js" defer></script>
+  </body>
+</html>
